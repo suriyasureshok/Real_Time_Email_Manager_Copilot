@@ -129,6 +129,7 @@ class EmailProducer:
                     }
                     emails.append(email_data)
                     logger.debug(f"Fetched email: {email_data['subject']} from {email_data['from']}")
+
                 except Exception as e:
                     logger.error(f"Error parsing email {email_id}: {e}")
             

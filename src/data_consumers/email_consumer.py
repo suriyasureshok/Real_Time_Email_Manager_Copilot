@@ -62,6 +62,6 @@ class EmailConsumer:
         """
         logger.debug(f"Processing email: {email_data}")
         master = MasterAgent()
-        response = master.run(email_data['body'])
+        loop = asyncio.get_event_loop()
+        response = loop.run_until_complete(master.run(email_data['body']))
         logger.info(f"MasterAgent response: {response}")
-        

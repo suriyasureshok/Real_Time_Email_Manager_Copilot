@@ -2,4 +2,4 @@ kafka-python
 pydantic
 pydantic-settings
 python-dotenv
-aioimaplib
+nltk
