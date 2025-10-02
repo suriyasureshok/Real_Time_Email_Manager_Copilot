@@ -3,3 +3,8 @@ pydantic
 pydantic-settings
 python-dotenv
 nltk
+pandas
+numpy
+scikit-learn
+pickle
+joblib
